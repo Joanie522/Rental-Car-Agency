@@ -1,49 +1,53 @@
-puts "hello"
-
-
-# class Main
-# 	def initialize(zip_code, pick_up_date, return_date, promo_code, renter_age)
-# 		@zip_code = zip_code
-# 		@pick_up_date = pick_up_date
-# 		@return_date = return_date
-# 		@promo_code = promo_code
-# 		@renter_age = renter_age
+# class Options
+# 	def initialize(Option_1, Option_2, Option_3, Option_4)
+# 		@Option_1 = Option_1
+# 		@Option_2 = Option_2
+# 		@Option_3 = Option_3
+# 		@Option_4 = Option_4
 # 	end
 
-# 	def zip_code
-# 		@zip_code
+# 	def Option_1
+# 		@Option_1
 # 	end
 
-# 	def pick_up_date
-# 		@pick_up_date
+# 	def Option_2
+# 		@Option_2
 # 	end
 
-# 	def return_date
-# 		@return_date
+# 	def Option_3
+# 		@Option_3
 # 	end
 
-# 	def promo_code
-# 		@promo_code
+# 	def Option_4
+# 		@Option_4
 # 	end
 
-# 	def renter_age
-# 		@renter_age
+# 	def display_menu
+# 	@display_menu = display_menu
 # 	end
-
-
-
-
-
-# puts "Start a reservation:"
-# 	print "Zip: "
-# 	zip_code = gets.chomp
-# 	print "Pick-up Date: "
-# 	pick_up_date = gets.chomp
-# 	print "Return-date "
-# 	return_date = gets.chomp
-# 	print "Promo code: "
-# 	promo_code = gets.chomp
-# 	print "Renter Age: "
-# 	renter_age = gets.chomp
 
 # end
+
+# selections = Options.new("Customer Details", "Vehicle Details", "Rent A Car", "Assign Vehicles" )
+
+puts "*************************************************
+****  Welcome to the Car Rental Application  ****
+*************************************************
+****  Please select from the following menu: ****
+**** 1. Option 1
+**** 2. Option 2
+**** 3. Option 3
+**** 4. Option 4"
+
+answer = gets.chomp.to_i
+if answer == 1
+    puts "You chose Option 1"
+elsif answer == 2
+	puts "You chose Option 2"
+elsif answer == 3
+	puts "Your chose Option 3"
+elsif answer == 4
+	puts "You chose Option 4"
+else
+	puts "Not a valid Option"
+end

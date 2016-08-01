@@ -1,3 +1,17 @@
+class Vehicles
+	def vehicle_year
+		@year >=2010 && <=2016
+	end
+
+	def vehicle_make
+		@make
+	end
+
+	def vehicle_model
+		@model
+	end
+end
+
 def display_menu clear, *msg
 	if clear == true
 		system "clear"
@@ -7,7 +21,7 @@ def display_menu clear, *msg
 	puts "****  Welcome to the Car Rental Application  ****"
 	puts "*************************************************"
 	puts "****  Please select from the following menu: ****"
-	puts "**** 1. Option 1"
+	puts "**** 1. Add a vehicle"
 	puts "**** 2. Option 2"
 	puts "**** 3. Option 3"
 	puts "**** 4. Option 4"
@@ -35,5 +49,6 @@ end
 def print_message msg
 	puts "!!! #{msg} !!!!"
 end
+
 
 display_menu(true)
